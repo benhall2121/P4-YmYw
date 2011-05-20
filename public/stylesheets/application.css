@@ -1,0 +1,76 @@
+@font-face {
+	font-family: OptimusPrinceps;
+	src: url('../fonts/OptimusPrinceps.ttf');
+	
+	font-family: OptimusPrincepsSemiBold;
+	src: url('../fonts/OptimusPrincepsSemiBold.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  /* fallback */
+  background-color: #2F2727;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* Firefox 3.6+ */ 
+  background: -moz-radial-gradient(circle, #495F89, #212D45);
+  /* Safari 4-5, Chrome 1-9 */
+  /* Can't specify a percentage size? */
+  background: -webkit-gradient(radial, center center, 0, center center, 800, from(#7F9FDB), to(#212D45));
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #495F89, #212D45);
+  /* Opera cannot do radial gradients yet */
+}
+
+.all{
+ padding:5px;	
+ width:810px;
+ margin-right:auto;
+ margin-left:auto;
+ 
+}
+
+.nav{	
+ text-align:center;
+ margin-top:15px;
+}
+
+.nav div{
+ display: inline-block;	
+}
+
+.page_header{
+ width: 100%;
+}
+
+.page_header div{
+ display:inline-block;	
+}
+
+div.left_header{
+ width:49.5%;
+ color:#FFF;
+ font-size:14px;
+ font-family:OptimusPrinceps;
+ text-shadow: #222 0px 0px 2px;
+}
+
+div.right_header{
+ width:49.5%;
+ text-align:right;
+}
+
+.mainPostContainer {
+ width: 604px;
+ margin-right:auto;
+ margin-left:auto;
+ background: #fff
+}
+
+
+
+

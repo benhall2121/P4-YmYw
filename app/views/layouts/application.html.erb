@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YmYw</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag 'jquery', 'application', 'jquery.movingboxes' %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<div class="all">
+
+<%= yield %>
+
+<div class="nav">
+  <div><%= link_to 'Home', root_path %></div>
+  <div><%= link_to 'Contact', contact_path %></div>
+  <div><%= link_to 'About', about_path %></div>
+  <div><%= link_to 'Help', help_path %></div>
+  <% if !signed_in? %>
+  <div><%= link_to 'Sign in', signin_path %></div>
+  <% else %>
+  <div><%= link_to 'Signout', signout_path %></div>  
+  <div><%= link_to "Create a New User", signup_path %></div>   
+  <% end %>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<div class="page_header">
+  <div class="left_header"><h1><%= @title %></h1></div> 
+
+ <% if signed_in? %>
+  <div class="right_header"><%= link_to 'New Post', new_post_path %></div>
+ <% end %>
+</div>
+
+<div class="mainPostContainer" id="mainPostContainer">
+    
+<% @posts.each do |post| %>
+         <div>
+           <h2><%= link_to post.title, post %></h2><br/>
+           <span class="dropdown"><%= post.start_date %></span><br/>
+           <%= post.end_date %><br/>
+           <%= post.description %><br/>
+           <% if signed_in? %>
+           <%= link_to 'Edit', edit_post_path(post) %><br/>
+           <%= link_to 'Delete', post, :confirm => 'Are you sure?', :method => :delete %>
+           <% end %>
+         </div>
+<% end %>
+
+
+</div>
+
