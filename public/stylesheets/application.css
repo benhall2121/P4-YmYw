@@ -26,6 +26,14 @@ body{
   /* Opera cannot do radial gradients yet */
 }
 
+a{
+ color: #3D3D3D;	
+}
+
+a:hover{
+ color: #A1A1A1;	
+}
+
 .all{
  padding:5px;	
  width:810px;
