@@ -1,7 +1,7 @@
 // Place your application-specific JavaScript functions and classes here
 // This file is automatically included by javascript_include_tag :defaults
 $(function(){
-
+alert("in2");
 	$('#mainPostContainer').movingBoxes({
 		startPanel   : 3,      // start with this panel
 		width        : 800,    // overall width of movingBoxes (not including navigation arrows)
