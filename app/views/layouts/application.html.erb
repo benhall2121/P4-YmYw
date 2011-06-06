@@ -3,8 +3,27 @@
 <head>
   <title>YmYw</title>
   <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults, 'jquery', 'application', 'jquery.movingboxes', 'rails' %>
+  <%= javascript_include_tag 'jquery', 'application', 'jquery.movingboxes', 'rails' %>
   <%= csrf_meta_tag %>
+  
+  
+  <!-- Google Analytics Code -->
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2677869-7']);
+  _gaq.push(['_setDomainName', '.p4ward.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+  <!-- Google Analytics Code End -->
+  
 </head>
 <body>
 
